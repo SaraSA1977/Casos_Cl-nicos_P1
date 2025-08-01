@@ -1,0 +1,17 @@
+Inicio
+    Solicitar al usuario: "Ingrese la dosis prescrita (mg/h):"
+    Guardar el valor en dosis
+
+    Solicitar al usuario: "Ingrese la concentración (mg/mL):"
+    Guardar el valor en concentracion
+
+    Calcular velocidad ← dosis / concentracion
+
+    Mostrar "Velocidad de infusión: ", velocidad, " mL/h"
+
+    Si velocidad > 50 entonces
+        Mostrar "pide atención"
+    Sino
+        Mostrar "continuar"
+    Fin Si
+Fin

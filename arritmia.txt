@@ -1,0 +1,24 @@
+Inicio
+    Solicitar al usuario: "¿Cuántos valores de frecuencia cardiaca va a ingresar?"
+    Guardar el número en M
+
+    Inicializar variable fuera_de_rango en 0
+    Inicializar contador en 0
+
+    Mientras contador sea menor que M hacer:
+        Solicitar al usuario: "Ingrese frecuencia cardíaca (ppm):"
+        Guardar el valor en frecuencia
+
+        Si frecuencia es menor que 60 o mayor que 100 entonces
+            Incrementar fuera_de_rango en 1
+        Fin Si
+
+        Incrementar contador en 1
+    Fin Mientras
+
+    Si fuera_de_rango es mayor que 3 entonces
+        Mostrar "potencial arritmia"
+    Sino
+        Mostrar "ritmico"
+    Fin Si
+Fin

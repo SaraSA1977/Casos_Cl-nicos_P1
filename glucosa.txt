@@ -1,0 +1,25 @@
+INICIO
+
+    Pedir al usuario cuántas lecturas de glucosa va a ingresar → N
+    Inicializar CONTADOR en 0
+    Inicializar SUMA en 0
+
+    MIENTRAS CONTADOR < N HACER
+        Pedir al usuario el valor de glucosa → LECTURA
+        Sumar LECTURA a SUMA
+        Aumentar CONTADOR en 1
+    FIN MIENTRAS
+
+    Calcular PROMEDIO = SUMA / N
+
+    SI PROMEDIO > 180 ENTONCES
+        Mostrar "hiperglucemia"
+    SINO SI PROMEDIO >= 70 Y PROMEDIO <= 180 ENTONCES
+        Mostrar "normal"
+    SINO SI PROMEDIO < 70 ENTONCES
+        Mostrar "hipoglucemia"
+    FIN SI
+
+    Mostrar "El promedio fue: " + PROMEDIO
+
+FIN
